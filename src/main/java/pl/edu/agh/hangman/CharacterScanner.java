@@ -3,9 +3,9 @@ package pl.edu.agh.hangman;
 import java.util.Scanner;
 
 public class CharacterScanner {
-	public String scanCharacter() {
+	public Character scanCharacter() {
 		Scanner scan = new Scanner(System.in);
-		String letter = scan.next();
+		Character letter = scan.next().charAt(0);
 		
 		return letter;
 	}
